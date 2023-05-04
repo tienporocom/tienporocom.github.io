@@ -1,0 +1,176 @@
+
+/*  */
+.slide1 {
+  position: relative;
+  display: flex;
+}
+.silde1_heading {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  color: #000000;
+}
+.slide1_heading-Bcolor {
+  display: inline;
+  color: #a0e4cb;
+}
+.slide1_des {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 572px;
+  height: 173px;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+
+  text-align: justify;
+
+  color: #2c2c2c;
+}
+.slide1_button {
+  display: flex;
+  padding: 0 100px;
+  justify-content: space-around;
+}
+.slide1_slice1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 60%;
+  height: 855px;
+  background: #ffffff;
+}
+.slide1_slice2 {
+  display: inline-block;
+  width: 40%;
+  height: 855px;
+  background: #a0e4cb;
+}
+#Slide1_pic {
+  position: absolute;
+  top: 160px;
+  left: 800px;
+  width: 567px;
+  height: 567px;
+  border-radius: 76px;
+  transform: rotate(-5deg);
+  object-fit: cover;
+}
+.slide_slice1-content{
+  margin: 0 auto;
+}
+/*  */
+
+.slide2 {
+  height: 600px;
+  text-align: center;
+}
+.slide2_banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin: 100px 148px 14px 148px;
+}
+.slide2_banner-dish {
+  border-radius: 35px;
+  background-repeat: no-repeat;
+}
+.slide2_banner-dish:nth-child(1) {
+  background: url(/HT_CN_WEB/assets/IMG/meal1.png);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+.slide2_banner-dish:nth-child(2) {
+  background: url(/HT_CN_WEB/assets/IMG/image.jfif);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.slide2_banner-dish:nth-child(3) {
+  background: url(/HT_CN_WEB/assets/IMG/image.webp);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.slide2_banner-dish:nth-child(4) {
+  background: url(/HT_CN_WEB/assets/IMG/chipotle-chicken.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.slide2_banner-dish:nth-child(5) {
+  background: url(/HT_CN_WEB/assets/IMG/image.jfif);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+.slide2_banner-dish-des {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  text-align: center;
+  color: #fffc3a;
+  width: 100%;
+  height: 100%;
+  background-color: #d6d6d67c;
+  border-radius: 35px;
+  display: none;
+}
+.slide2_banner-dish:first-child,
+.slide2_banner-dish:last-child {
+  line-height: 150px;
+}
+.slide2_banner-dish:nth-child(2),
+.slide2_banner-dish:nth-child(4) {
+  line-height: 200px;
+}
+.slide2_banner-dish:nth-child(3) {
+  line-height: 300px;
+}
+
+.slide2_banner-dish:first-child:hover .slide2_banner-dish-des,
+.slide2_banner-dish:nth-child(2):hover .slide2_banner-dish-des,
+.slide2_banner-dish:nth-child(3):hover .slide2_banner-dish-des,
+.slide2_banner-dish:nth-child(4):hover .slide2_banner-dish-des,
+.slide2_banner-dish:last-child:hover .slide2_banner-dish-des {
+  display: inline-block;
+}
+.slide2_banner-des {
+  text-align: center;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 99px;
+  color: #000000;
+}
+.slide2_banner-button-menu {
+  width: 250px;
+  height: 65px;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 65px;
+  color: #fff;
+  background-color: #a0e4cb;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: font-size 0.1s;
+}
+
+.slide2_banner-button-menu a{
+  text-decoration: none;
+  color: #fff;
+
+}
+
+.slide2_banner-button-menu:hover {
+  font-size: 40px;
+}
+/* \ */

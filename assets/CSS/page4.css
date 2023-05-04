@@ -1,0 +1,137 @@
+.containner {
+  margin-top: 65px;
+  position: relative;
+  width: 1440px;
+}
+
+.ctn-slide1 {
+  width: 100%;
+  display: flex;
+}
+.slide1_slice1 {
+  width: 840px;
+  padding: 80px 0 0 120px;
+}
+.silde1_heading {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 79px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.slide1_des {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: justify;
+  width: 430px;
+}
+.ctn-contact {
+  margin-top: 35px;
+}
+.slide1_icon {
+  padding: 10px;
+  background-color: #a0e4cb;
+  display: inline-block;
+  border-radius: 25px;
+}
+.slide1_icon i {
+  color: #383838dd;
+}
+.slide1_info {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  width: 290px;
+  margin: 5px 0 10px 0;
+}
+.space_lit {
+  height: 30px;
+  width: 100%;
+  display: inline;
+}
+.slide1_slice2 {
+  width: 600px;
+  height: 100vh;
+  background-color: #a0e4cb;
+  position: relative;
+}
+.rect {
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  width: 740px;
+  height: 715px;
+  top: 78px;
+  left: -280px;
+  box-shadow: -4px 4px 15px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 34px;
+}
+.form_table {
+  margin-top: 90px;
+  margin-left: 60px;
+}
+
+.form_table td label {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: rgb(40, 40, 40);
+}
+.form_table tr td:first-child {
+  width: 338px;
+}
+.form_table td input,
+.form_table td textarea {
+  width: 250px;
+  height: 62px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 0 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(157, 157, 157, 0.33);
+  border-radius: 30px;
+  align-items: start;
+  margin-bottom: 40px;
+  font-family: "Roboto";
+  font-size: 18px;
+}
+.form_table td input::placeholder,
+.form_table td textarea::placeholder {
+  
+  color: #d5d5d5;
+  font-family: "Roboto";
+}
+.form_table td textarea {
+  padding-top: 20px;
+  width: 588px;
+  height: 160px;
+}
+.b1 {
+  font-size: 20PX;
+  font-family: "Roboto";
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  background: #a0e4cb;
+  box-shadow: 4px 4px 4px #cff5e6;
+  border-radius: 19px;
+}
+label span{
+  padding-left: 5px;
+  color: rgb(255, 49, 49);
+}

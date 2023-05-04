@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT . HealthyFood</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awaresome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--reset css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/CSS/main.css" />
+    <link rel="stylesheet" href="assets/CSS/page4.css" />
+    <link rel="shortcut icon" href="assets/IMG/logo.png" type="image/x-icon" />
+    <!-- jquery -->
+   
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script>
+      $(document).ready(function () {
+        function validName() {
+          let reg = /^([A-Z]{1}[a-z]*\s)*([A-Z]{1}[a-z]*)*$/;
+          var name = $("#name").val();
+          if (name.length == 0) {
+            $("#label_name span").html("Not be left blank");
+            return false;
+          } else if (!reg.test(name)) {
+            $("#label_name span").html("Invalid");
+            return false;
+          } else $("#label_name span").html("");
+          return true;
+        }
+        $("#name").blur(validName);
+        function validemail() {
+          let reg = /^[A-Za-z0-9_]+@([A-Za-z]+\.)+[A-Za-z]+$/;
+          var email = $("#email").val();
+          if (email.length == 0) {
+            $("#label_email span").html("Not be left blank");
+            return false;
+          } else if (!reg.test(email)) {
+            $("#label_email span").html("Invalid");
+            return false;
+          } else $("#label_email span").html("");
+          return true;
+        }
+        $("#email").blur(validemail);
+
+        function validtel() {
+          let reg = /^[0-9]{9,10}$/;
+          var tel = $("#tel").val();
+          if (tel.length == 0) {
+            $("#label_tel span").html("Not be left blank");
+            return false;
+          } else if (!reg.test(tel)) {
+            $("#label_tel span").html("Invalid");
+            return false;
+          } else $("#label_tel span").html("");
+          return true;
+        }
+        $("#tel").blur(validtel);
+
+        function validsub() {
+          var sub = $("#sub").val();
+          if (sub == 0) {
+            $("#label_sub span").html("Not be left blank");
+            return false;
+          } else if (sub > 15 || sub < 0) {
+            $("#label_sub span").html("Invalid");
+            return false;
+          } else $("#label_sub span").html("");
+          return true;
+        }
+        $("#sub").blur(validsub);
+      });
+    </script>
+  </head>
+
+  <body class="app">
+    <header class="header">
+      <div class="header_right-side">
+        <img
+          class="header__navbar-logo"
+          src="assets/IMG/logo.png"
+          alt="Logo HF here"
+        />
+        <a class="header_navbar-item header_navbar-webname" href=""
+          >HealthyFood</a
+        >
+      </div>
+      <div class="center header_navbar-list">
+        <a class="header_navbar-item" href="./index.html">Home</a>
+        <a class="header_navbar-item " href="./about.html"
+          >About</a
+        >
+        <a class="header_navbar-item" href="./menu.html">Menu</a>
+        <a class="header_navbar-item" href="">Pages</a>
+        <a class="header_navbar-item" id="hearder_cart" href=""
+          >Cart(<span class="header_navbar-num-of-cart">3</span>)
+          <ul class="header_info-cart">
+            <li class="header_info-cart-items">
+              <img
+                class="header_info-cart-img"
+                src="/HT_CN_WEB/assets/IMG/salad-2.png"
+                alt=""
+              />
+              <p class="header-cart-item-name">Salmon salad</p>
+              <button class="item-change-down">-</button>
+              <div class="item-quantum">1</div>
+              <button class="item-change-up">+</button>
+            </li>
+            <li class="header_info-cart-items">
+              <img
+                class="header_info-cart-img"
+                src="/HT_CN_WEB/assets/IMG/meal1.png"
+                alt=""
+              />
+              <p class="header-cart-item-name">Stewed bean rice</p>
+              <button class="item-change-down">-</button>
+              <div class="item-quantum">1</div>
+              <button class="item-change-up">+</button>
+            </li>
+            <li class="header_info-cart-items">
+              <img
+                class="header_info-cart-img"
+                src="/HT_CN_WEB/assets/IMG/chipotle-chicken.jpg"
+                alt=""
+              />
+              <p class="header-cart-item-name">Cucumber mixed fruit</p>
+              <button class="item-change-down">-</button>
+              <div class="item-quantum">1</div>
+              <button class="item-change-up">+</button>
+            </li>
+          </ul>
+        </a>
+      </div>
+      <span class="header_navbar-sign" style="opacity: 0%;">
+        <button class="button-form header_navbar-order">Order online</button>
+        <button class="button-form header_navbar-Reservate">Reservate</button>
+      </span>
+    </header>
+    <div class="container">
+      <div class="ctn-slide1">
+        <div class="slide1_slice1">
+          <p class="silde1_heading">CONTACT US</p>
+          <p class="slide1_des">
+            To reserve a table or order food. Your request will be processed
+            within 12 working hoursContact us to reserve a table or order food.
+            Your request will be processed within 12 working hours
+          </p>
+          <div class="ctn-contact">
+            <div class="slide1_icon">
+              <i class="fa-brands fa-square-facebook"></i><span> </span>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+            <div class="slide1_info">/HEALTHYFOOD_la</div>
+            <div class="slide1_icon">
+              <i class="fa-solid fa-square-phone"></i>
+            </div>
+            <div class="slide1_info">098-235-2364</div>
+            <div class="slide1_icon">
+              <i class="fa-solid fa-map-location"></i>
+            </div>
+            <div class="slide1_info">
+              8500 Beverly Blvd Suite #743,<br />Los Angeles, CA 90048 <br />
+              <br />347 N Rodeo Dr, Beverrly Hills, CA 90210
+            </div>
+          </div>
+        </div>
+
+        <div class="slide1_slice2">
+          <div class="rect">
+            <form action="">
+              <table class="form_table">
+                <tr>
+                  <td>
+                    <label id="label_name" for="name"
+                      >Name: <span> </span
+                    ></label>
+                  </td>
+                  <td>
+                    <label id="label_email" for="email"
+                      >Email address: <span> </span
+                    ></label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input
+                      type="text"
+                      name=""
+                      id="name"
+                      placeholder="John Carter"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="email"
+                      name=""
+                      id="email"
+                      placeholder="example@gmail.com"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label id="label_tel" for="tel"
+                      >Phone: <span> </span
+                    ></label>
+                  </td>
+                  <td>
+                    <label id="label_sub" for="sub"
+                      >Reservation: <span> </span
+                    ></label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input
+                      type="tel"
+                      name=""
+                      id="tel"
+                      placeholder="123789456"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name=""
+                      id="sub"
+                      placeholder="Ex. Reservation"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <label id="label_mess" for="mess"
+                      >Messgae: <span> </span
+                    ></label>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <textarea
+                      class="mess_box"
+                      name=""
+                      id="mess"
+                      placeholder="Please type your message here..."
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <button class="b1">Send message</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
