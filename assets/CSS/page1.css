@@ -81,31 +81,31 @@
   background-repeat: no-repeat;
 }
 .slide2_banner-dish:nth-child(1) {
-  background: url(/HT_CN_WEB/assets/IMG/meal1.png);
+  background: url(../IMG/meal1.png);
   background-size: cover;
   width: 150px;
   height: 150px;
 }
 .slide2_banner-dish:nth-child(2) {
-  background: url(/HT_CN_WEB/assets/IMG/image.jfif);
+  background: url(../IMG/image.jfif);
   background-size: cover;
   width: 200px;
   height: 200px;
 }
 .slide2_banner-dish:nth-child(3) {
-  background: url(/HT_CN_WEB/assets/IMG/image.webp);
+  background: url(../IMG/image.webp);
   background-size: cover;
   width: 300px;
   height: 300px;
 }
 .slide2_banner-dish:nth-child(4) {
-  background: url(/HT_CN_WEB/assets/IMG/chipotle-chicken.jpg);
+  background: url(../IMG/chipotle-chicken.jpg);
   background-size: cover;
   width: 200px;
   height: 200px;
 }
 .slide2_banner-dish:nth-child(5) {
-  background: url(/HT_CN_WEB/assets/IMG/image.jfif);
+  background: url(../IMG/image.jfif);
   background-size: cover;
   width: 150px;
   height: 150px;
