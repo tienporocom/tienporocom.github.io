@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADMIN.Healthyfood</title>
+    <link rel="stylesheet" type="text/css" href="admin.css" />
+    <link rel="stylesheet" href="assets/CSS/admin.css">
+  </head>
+  <body>
+    <header>
+      <h1>Healthyfood - Admin</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="total">
+            <span class="label">Total proceeds:</span>
+            <span class="value1">206$</span> <span class="label">Compared to daily average:</span>
+            <span class="value2">73.6% ▼</span>
+          </div>
+          <br>
+      <section id="orders">
+        <h2>Orders</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Order date</th>
+              <th>Value</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ORD001</td>
+              <td>01/05/2023</td>
+              <td>50$</td>
+              <td>Waiting for progressing</td>
+              <td>
+                <button class="btn btn-primary">Details</button>
+                <button class="btn btn-success">Order processing</button>
+                <button class="btn btn-danger">Cancel order</button>
+              </td>
+            </tr>
+            <tr>
+              <td>ORD002</td>
+              <td>02/05/2023</td>
+              <td>12$</td>
+              <td>Processed</td>
+              <td>
+                <button class="btn btn-primary">Details</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="products">
+        <h2>Products</h2>
+        <button class="btn btn-success">Add Product</button><br /><br />
+        <table>
+          <thead>
+            <tr>
+              <th>Product Code</th>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Remaining quantity</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PRD001</td>
+              <td>Salmon salad</td>
+              <td>2.5$</td>
+              <td>5</td>
+              <td>
+                <button class="btn btn-primary">Details</button>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-danger">Delete product</button>
+              </td>
+            </tr>
+            <tr>
+              <td>PRD002</td>
+              <td>Stewed bean rice</td>
+              <td>3.0$</td>
+              <td>15</td>
+              <td>
+                <button class="btn btn-primary">Details</button>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-danger">Delete product</button>
+              </td>
+            </tr>
+            <tr>
+              <td>PRD003</td>
+              <td>Yogurt salad</td>
+              <td>1.8$</td>
+              <td>8</td>
+              <td>
+                <button class="btn btn-primary">Details</button>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-danger">Delete product</button>
+              </td>
+            </tr>
+            <tr>
+              <td>PRD004</td>
+              <td>Grilled ribs rice</td>
+              <td>5.0$</td>
+              <td>3</td>
+              <td>
+                <button class="btn btn-primary">Details</button>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-danger">Delete product</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Manage booking</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Booking date</th>
+              <th>Placer</th>
+              <th>Phone number</th>
+              <th>Email</th>
+              <th>Number of people</th>
+              <th>Time to come</th>
+              <th>Notes</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>05/05/2023</td>
+              <td>Nguyen Van Tien</td>
+              <td>0123456789</td>
+              <td>nguyenvana@gmail.com</td>
+              <td>3</td>
+              <td>12:00</td>
+              <td>Additional dipping sauce requested</td>
+              <td>Unconfirmed</td>
+              <td>
+                <button class="btn btn-success">Confirm</button>
+                <button class="btn btn-danger">Cancel</button>
+              </td>
+            </tr>
+            <tr>
+              <td>04/05/2023</td>
+              <td>Cao Pham Ngoc Tran</td>
+              <td>0565545877</td>
+              <td>trancp@gmail.com</td>
+              <td>4</td>
+              <td>14:00</td>
+              <td>Don't use MSG</td>
+              <td>Unconfirmed</td>
+              <td>
+                <button class="btn btn-success">Confirm</button>
+                <button class="btn btn-danger">Cancel</button>
+              </td>
+            </tr>
+            <tr>
+              <td>01/05/2023</td>
+              <td>Tran Thi B</td>
+              <td>0987654321</td>
+              <td>tranthib@gmail.com</td>
+              <td>5</td>
+              <td>18:00</td>
+              <td></td>
+              <td>Confirmed</td>
+              <td>
+                <button class="btn btn-danger">Cancel</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <h2 class="chart_title">Rate of visitors per hour</h2>
+      <div class="chart">
+        <div class="bar" style="height: 20px">8</div>
+        <div class="bar" style="height: 30px">9</div>
+        <div class="bar" style="height: 50px">10</div>
+        <div class="bar" style="height: 60px">11</div>
+        <div class="bar" style="height: 80px">12</div>
+        <div class="bar" style="height: 50px">13</div>
+        <div class="bar" style="height: 30px">14</div>
+        <div class="bar" style="height: 10px">15</div>
+        <div class="bar" style="height: 20px">16</div>
+        <div class="bar" style="height: 40px">17</div>
+        <div class="bar" style="height: 50px">18</div>
+        <div class="bar" style="height: 20px">19</div>
+        <div>Total: 172</div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Healthyfood. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
