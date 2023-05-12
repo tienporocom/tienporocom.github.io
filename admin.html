@@ -1,203 +1,440 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ADMIN.Healthyfood</title>
-    <link rel="stylesheet" type="text/css" href="admin.css" />
-    <link rel="stylesheet" href="assets/CSS/admin.css">
-  </head>
-  <body>
-    <header>
-      <h1>Healthyfood - Admin</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Logout</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-        <div class="total">
-            <span class="label">Total proceeds:</span>
-            <span class="value1">206$</span> <span class="label">Compared to daily average:</span>
-            <span class="value2">73.6% ▼</span>
-          </div>
-          <br>
-      <section id="orders">
-        <h2>Orders</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Order ID</th>
-              <th>Order date</th>
-              <th>Value</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>ORD001</td>
-              <td>01/05/2023</td>
-              <td>50$</td>
-              <td>Waiting for progressing</td>
-              <td>
-                <button class="btn btn-primary">Details</button>
-                <button class="btn btn-success">Order processing</button>
-                <button class="btn btn-danger">Cancel order</button>
-              </td>
-            </tr>
-            <tr>
-              <td>ORD002</td>
-              <td>02/05/2023</td>
-              <td>12$</td>
-              <td>Processed</td>
-              <td>
-                <button class="btn btn-primary">Details</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section id="products">
-        <h2>Products</h2>
-        <button class="btn btn-success">Add Product</button><br /><br />
-        <table>
-          <thead>
-            <tr>
-              <th>Product Code</th>
-              <th>Product Name</th>
-              <th>Price</th>
-              <th>Remaining quantity</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>PRD001</td>
-              <td>Salmon salad</td>
-              <td>2.5$</td>
-              <td>5</td>
-              <td>
-                <button class="btn btn-primary">Details</button>
-                <button class="btn btn-warning">Edit</button>
-                <button class="btn btn-danger">Delete product</button>
-              </td>
-            </tr>
-            <tr>
-              <td>PRD002</td>
-              <td>Stewed bean rice</td>
-              <td>3.0$</td>
-              <td>15</td>
-              <td>
-                <button class="btn btn-primary">Details</button>
-                <button class="btn btn-warning">Edit</button>
-                <button class="btn btn-danger">Delete product</button>
-              </td>
-            </tr>
-            <tr>
-              <td>PRD003</td>
-              <td>Yogurt salad</td>
-              <td>1.8$</td>
-              <td>8</td>
-              <td>
-                <button class="btn btn-primary">Details</button>
-                <button class="btn btn-warning">Edit</button>
-                <button class="btn btn-danger">Delete product</button>
-              </td>
-            </tr>
-            <tr>
-              <td>PRD004</td>
-              <td>Grilled ribs rice</td>
-              <td>5.0$</td>
-              <td>3</td>
-              <td>
-                <button class="btn btn-primary">Details</button>
-                <button class="btn btn-warning">Edit</button>
-                <button class="btn btn-danger">Delete product</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section>
-        <h2>Manage booking</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Booking date</th>
-              <th>Placer</th>
-              <th>Phone number</th>
-              <th>Email</th>
-              <th>Number of people</th>
-              <th>Time to come</th>
-              <th>Notes</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>05/05/2023</td>
-              <td>Nguyen Van Tien</td>
-              <td>0123456789</td>
-              <td>nguyenvana@gmail.com</td>
-              <td>3</td>
-              <td>12:00</td>
-              <td>Additional dipping sauce requested</td>
-              <td>Unconfirmed</td>
-              <td>
-                <button class="btn btn-success">Confirm</button>
-                <button class="btn btn-danger">Cancel</button>
-              </td>
-            </tr>
-            <tr>
-              <td>04/05/2023</td>
-              <td>Cao Pham Ngoc Tran</td>
-              <td>0565545877</td>
-              <td>trancp@gmail.com</td>
-              <td>4</td>
-              <td>14:00</td>
-              <td>Don't use MSG</td>
-              <td>Unconfirmed</td>
-              <td>
-                <button class="btn btn-success">Confirm</button>
-                <button class="btn btn-danger">Cancel</button>
-              </td>
-            </tr>
-            <tr>
-              <td>01/05/2023</td>
-              <td>Tran Thi B</td>
-              <td>0987654321</td>
-              <td>tranthib@gmail.com</td>
-              <td>5</td>
-              <td>18:00</td>
-              <td></td>
-              <td>Confirmed</td>
-              <td>
-                <button class="btn btn-danger">Cancel</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <h2 class="chart_title">Rate of visitors per hour</h2>
-      <div class="chart">
-        <div class="bar" style="height: 20px">8</div>
-        <div class="bar" style="height: 30px">9</div>
-        <div class="bar" style="height: 50px">10</div>
-        <div class="bar" style="height: 60px">11</div>
-        <div class="bar" style="height: 80px">12</div>
-        <div class="bar" style="height: 50px">13</div>
-        <div class="bar" style="height: 30px">14</div>
-        <div class="bar" style="height: 10px">15</div>
-        <div class="bar" style="height: 20px">16</div>
-        <div class="bar" style="height: 40px">17</div>
-        <div class="bar" style="height: 50px">18</div>
-        <div class="bar" style="height: 20px">19</div>
-        <div>Total: 172</div>
+
+<head>
+  <title>ADMIN.Healthyfood</title>
+  <link rel="stylesheet" href="assets/CSS/admin.css" />
+  <link rel="stylesheet" href="./assets/CSS/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      function countValue() {
+        var total = 0;
+        $('input[name="meal"]:checked').each(function () {
+          total += parseFloat($(this).val());
+        });
+        $("#inp_o_value").val(total);
+      }
+      $('input[name="meal"]').change(countValue);
+
+      function validoOID() {
+        var OID = $("#inp_o_code").val();
+        var reg_OID = /^ORD[A-Za-z0-9]{3,}$/;
+        if (reg_OID.test(OID)) {
+          $("#notiinp_o_code").html("");
+
+          return true;
+        } else {
+          $("#notiinp_o_code").html("Invalid must include ORDxxx");
+          return false;
+        }
+      }
+      $("#inp_o_code").blur(validoOID);
+
+      function validODate() {
+        var Odate = new Date($("#inp_o_date").val());
+        var today = new Date();
+        Odate.setHours(0, 0, 0, 0);
+        today.setHours(0, 0, 0, 0);
+        if (today.getTime() < Odate.getTime()) {
+          $("#notiinp_o_date").html("");
+
+          return true;
+        } else {
+          $("#notiinp_o_date").html("Invalid must be greater than today");
+          return false;
+        }
+      }
+      $("#inp_o_date").blur(validODate);
+
+      function validpID() {
+        var pID = $("#inp_p_code").val();
+        var reg_pID = /^PRD[A-Za-z0-9]{3,}$/;
+        if (reg_pID.test(pID)) {
+          $("#notiinp_p_code").html("");
+
+          return true;
+        } else {
+          $("#notiinp_p_code").html("Invalid must include PRDxxx");
+          return false;
+        }
+      }
+      $("#inp_p_code").blur(validpID);
+
+      function validpName() {
+        var pName = $("#inp_p_name").val();
+        if (pName.length) {
+          $("#notiinp_p_name").html("");
+          return true;
+        } else {
+          $("#notiinp_p_name").html("Cannot be left blank");
+          return false;
+        }
+      }
+      $("#inp_p_name").blur(validpName);
+
+      function validpPrice() {
+        var pPrice = $("#inp_p_price").val();
+        if (pPrice > 0) {
+          $("#notiinp_p_price").html("");
+          return true;
+        } else {
+          $("#notiinp_p_price").html("Price must be greater than 0");
+          return false;
+        }
+      }
+      $("#inp_p_price").blur(validpPrice);
+
+      function validpQuantity() {
+        var pQuantity = $("#inp_p_quantity").val();
+        if (pQuantity > 0) {
+          $("#notiinp_p_quantity").html("");
+          return true;
+        } else {
+          $("#notiinp_p_quantity").html("Quantity must be greater than 0");
+          return false;
+        }
+      }
+      $("#inp_p_quantity").blur(validpQuantity);
+
+      function countTotal() {
+        const xhr = new XMLHttpRequest();
+        xhr.open(
+          "GET",
+          "https://6457cf7b1a4c152cf98b05ea.mockapi.io/api/admin/orders"
+        );
+        xhr.responseType = "json";
+        xhr.onload = function (e) {
+          if (this.status == 200) {
+            console.log("response", this.response); // JSON response
+            let total = 0;
+
+            this.response.forEach((element) => {
+              total += parseFloat(element.value);
+            });
+            $(".value1").html(total);
+            let avg = 156;
+            let per = total / (avg / 100);
+            $(".value1").html(total);
+            var sta = avg > total ? "▼" : avg == total ? "◐" : "▲";
+            $(".value2").html(per.toFixed(1) + " " + sta);
+          }
+        };
+        xhr.send();
+      }
+      countTotal();
+    });
+  </script>
+  <script>
+    // load table products
+    $(document).ready(function () {
+      const xhr = new XMLHttpRequest();
+      xhr.open(
+        "GET","https://6457cf7b1a4c152cf98b05ea.mockapi.io/api/admin/products"
+      );
+      xhr.responseType = "json";
+      xhr.onload = function (e) {
+        if (this.status == 200) {
+          console.log("response", this.response); // JSON response
+          this.response.forEach((element) => {
+            var classRecord = "product-record-" + element.id;
+            $(".product-list").append(
+              "<tr class='" +classRecord +"'><td>" +
+              element.code + "</td><td>" +
+              element.name +"</td><td>" +
+              element.price + "$</td><td>" +
+              element.remainingQuantity + "</td><td>" +
+              '<button class="btn btn-warning" onclick=\'editProduct(' +element.id +")'>Edit</button>" +
+              '<button class="btn btn-danger" onclick=\'deleteProduct(' + element.id +")'>Delete product</button></td></tr>"
+            );
+          });
+        }
+      };
+      xhr.send();
+    });
+
+    function deleteProduct(productId) {
+      const xhr = new XMLHttpRequest();
+      xhr.open("DELETE","https://6457cf7b1a4c152cf98b05ea.mockapi.io/api/admin/products/" + productId);
+      xhr.responseType = "json";
+      xhr.send();
+      $(".product-record-" + productId).remove();
+    }
+
+
+    function editProduct(productId) { }
+
+    function addProduct() { }
+
+    $(document).ready(function () {
+      const xhr = new XMLHttpRequest();
+      xhr.open(
+        "GET",
+        "https://6457cf7b1a4c152cf98b05ea.mockapi.io/api/admin/orders"
+      );
+      xhr.responseType = "json";
+      xhr.onload = function (e) {
+        if (this.status == 200) {
+          console.log("response", this.response); // JSON response
+          this.response.forEach((element) => {
+            var classRecord = "order-record-" + element.id;
+            $(".oders-table").append( "<tr class='" + classRecord +"'><td>" +
+              element.orderId +"</td><td>"  +
+              element.orderDate +"</td><td>" +
+              element.value +"$</td><td>" +
+              element.status +"</td><td>" +
+              '<button class="btn btn-warning" onclick=\'orderProcessing(' + element.id + ")'>Order processing</button>" +
+              '<button class="btn btn-danger" onclick=\'cancelOrder(' + element.id +")'>Cancel order</button></td></tr>"
+            );
+          });
+        }
+      };
+      xhr.send();
+    });
+
+
+    function orderProcessing(orderId) {
+      
+     }
+
+    function cancelOrder(orderId) { 
+      const xhr = new XMLHttpRequest();
+      xhr.open("DELETE","https://6457cf7b1a4c152cf98b05ea.mockapi.io/api/admin/orders/" + orderId);
+      xhr.responseType = "json";
+      xhr.send();
+      $(".order-record-" + orderId).remove();
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Healthyfood - Admin</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="total">
+      <span class="label">Total proceeds:</span>
+      <span class="value1">Counting</span>
+      <span class="label">Compared to daily average:</span>
+      <span class="value2">Counting</span>
+    </div>
+    <br />
+    <section id="orders">
+      <h2>Orders</h2>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#modal_inp_order">
+        Add Order</button><br /><br />
+
+      <table>
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Order date</th>
+            <th>Value</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody class="oders-table"></tbody>
+      </table>
+    </section>
+    <section id="products">
+      <h2>Products</h2>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#modal_inp_product">
+        Add Product</button><br /><br />
+      <table id="table-product">
+        <thead>
+          <tr>
+            <th>Product Code</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Remaining quantity</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody class="product-list"></tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Manage booking</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Booking date</th>
+            <th>Placer</th>
+            <th>Phone number</th>
+            <th>Email</th>
+            <th>Number of people</th>
+            <th>Time to come</th>
+            <th>Notes</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>05/05/2023</td>
+            <td>Nguyen Van Tien</td>
+            <td>0123456789</td>
+            <td>nguyenvana@gmail.com</td>
+            <td>3</td>
+            <td>12:00</td>
+            <td>Additional dipping sauce requested</td>
+            <td>Unconfirmed</td>
+            <td>
+              <button class="btn btn-success">Confirm</button>
+              <button class="btn btn-danger">Cancel</button>
+            </td>
+          </tr>
+          <tr>
+            <td>04/05/2023</td>
+            <td>Cao Pham Ngoc Tran</td>
+            <td>0565545877</td>
+            <td>trancp@gmail.com</td>
+            <td>4</td>
+            <td>14:00</td>
+            <td>Don't use MSG</td>
+            <td>Unconfirmed</td>
+            <td>
+              <button class="btn btn-success">Confirm</button>
+              <button class="btn btn-danger">Cancel</button>
+            </td>
+          </tr>
+          <tr>
+            <td>01/05/2023</td>
+            <td>Tran Thi B</td>
+            <td>0987654321</td>
+            <td>tranthib@gmail.com</td>
+            <td>5</td>
+            <td>18:00</td>
+            <td></td>
+            <td>Confirmed</td>
+            <td>
+              <button class="btn btn-danger">Cancel</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <h2 class="chart_title">Rate of visitors per hour</h2>
+    <div class="chart">
+      <div class="bar" style="height: 20px">8</div>
+      <div class="bar" style="height: 30px">9</div>
+      <div class="bar" style="height: 50px">10</div>
+      <div class="bar" style="height: 60px">11</div>
+      <div class="bar" style="height: 80px">12</div>
+      <div class="bar" style="height: 50px">13</div>
+      <div class="bar" style="height: 30px">14</div>
+      <div class="bar" style="height: 10px">15</div>
+      <div class="bar" style="height: 20px">16</div>
+      <div class="bar" style="height: 40px">17</div>
+      <div class="bar" style="height: 50px">18</div>
+      <div class="bar" style="height: 20px">19</div>
+      <div>Total: 172</div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Healthyfood. All rights reserved.</p>
+  </footer>
+  <!-- modal input product -->
+  <div id="modal_inp_product" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="my-modal-title">ADD PRODUCT</h5>
+          <button class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="get" action="">
+            <div class="form-group">
+              <label for="inp_p_code">Product code</label>
+              <input id="inp_p_code" class="form-control" type="text" name="" value="PRD" />
+              <span id="notiinp_p_code" class="Wrong_col"></span>
+            </div>
+            <div class="form-group">
+              <label for="inp_p_name">Product Name</label>
+              <input id="inp_p_name" class="form-control" type="text" name="" />
+              <span id="notiinp_p_name" class="Wrong_col"></span>
+            </div>
+            <div class="form-group">
+              <label for="inp_p_price">Product price</label>
+              <input id="inp_p_price" class="form-control" type="number" name="" />
+              <span id="notiinp_p_price" class="Wrong_col"></span>
+            </div>
+            <div class="form-group">
+              <label for="inp_p_quantity">Product quantity</label>
+              <input id="inp_p_quantity" class="form-control" type="number" name="" />
+              <span id="notiinp_p_quantity" class="Wrong_col"></span>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success" type="button">ADD</button>
+        </div>
       </div>
-    </main>
-    <footer>
-      <p>&copy; 2023 Healthyfood. All rights reserved.</p>
-    </footer>
-  </body>
+    </div>
+  </div>
+  <!-- modal input order -->
+  <div id="modal_inp_order" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="my-modal-title">ADD ORDER</h5>
+          <button class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="get" action="">
+            <div class="form-group">
+              <label for="inp_o_code">Order ID</label>
+              <input id="inp_o_code" class="form-control" type="text" name="" value="ORD" />
+              <span id="notiinp_o_code" class="Wrong_col"></span>
+            </div>
+            <div class="form-group">
+              <label for="inp_o_date">Order date</label>
+              <input id="inp_o_date" class="form-control" type="date" name="inp_o_date" />
+              <span id="notiinp_o_date" class="Wrong_col"></span>
+            </div>
+            <div class="form-check form-check-inline">
+              <input id="meal_1" class="form-check-input" type="checkbox" name="meal" value="10" />
+              <label for="meal_1" class="form-check-label">meal 1</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input id="meal_2" class="form-check-input" type="checkbox" name="meal" value="12" />
+              <label for="meal_2" class="form-check-label">meal 2</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input id="meal_3" class="form-check-input" type="checkbox" name="meal" value="15" />
+              <label for="meal_3" class="form-check-label">meal 3</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input id="meal_4" class="form-check-input" type="checkbox" name="meal" value="20" />
+              <label for="meal_4" class="form-check-label">meal 4</label>
+            </div>
+            <div class="form-group">
+              <label for="inp_o_value">Value</label>
+              <input id="inp_o_value" class="form-control" type="text" value="0" disabled />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-success" type="button">ADD</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

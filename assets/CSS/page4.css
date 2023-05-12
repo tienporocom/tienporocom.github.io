@@ -129,6 +129,11 @@
   background: #a0e4cb;
   box-shadow: 4px 4px 4px #cff5e6;
   border-radius: 19px;
+  cursor: pointer;
+}
+.b1:hover{
+  background: #79e3bc;
+
 }
 label span {
   padding-left: 5px;

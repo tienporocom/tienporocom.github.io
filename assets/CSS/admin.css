@@ -4,6 +4,9 @@ body {
     padding: 0;
   }
 
+  .Wrong_col{
+    color: red;
+  }
   header {
     background-color: #2e4053;
     color: white;
