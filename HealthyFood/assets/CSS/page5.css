@@ -9,7 +9,8 @@
     margin-top: 90px;
 }
 .blog_container{
-    width: 1300px;
+    max-width: 1300px;
+    width: 100vw;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -117,3 +118,20 @@ cursor: pointer;
         background-color: #c0c0c0;
         color: #ffffff;
     }
+
+    @media (max-width: 768px) {
+        .blog_item-normal{
+            margin-bottom: 15px;
+
+        }
+        .blog_item-des{
+            text-overflow: ellipsis;
+        }
+        .blog_right-item{
+            justify-content: center;
+        }
+        .blog_item-large{
+            width: 380px;
+            margin: 10px auto;
+        }
+      }

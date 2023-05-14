@@ -174,3 +174,40 @@
   font-size: 40px;
 }
 /* \ */
+
+@media (max-width: 768px) {
+  .slide1_slice1 {
+    width: 100%;
+    height: auto;
+  }
+  .slide1_slice2 {
+    display: none;
+  }
+  #Slide1_pic {
+    display: none;
+  }
+  .slide1_des {
+    width: 95vw;
+    font-size: 25px;
+    height: auto;
+    margin-left: 2.5vw;
+  }
+  .slide_slice1-content {
+    margin: 0 0;
+    text-align: center;
+}
+.slide1_button {
+  padding: 0 50px;
+}
+.slide2_banner{
+  margin: 100px 0 14px 0;
+}
+footer{
+  margin-top: 50px;
+}
+.slide2_banner-dish{
+  border-radius: 30px;
+}
+
+}
+

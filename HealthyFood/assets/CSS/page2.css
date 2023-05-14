@@ -1,6 +1,6 @@
 .container {
-    width: 1440px;
-    height: 1160px;
+    /* width: 1440px; */
+    /* height: 1160px; */
 }
 
 .row-1 {
@@ -61,3 +61,36 @@
     border-radius: 50px
    
 }
+
+@media (max-width: 768px) {
+    #text-1{
+        margin-top: 0;
+        margin-left: 0;
+        font-size: 55px;
+
+    }
+    #text-2, #row-2-text{
+        width: 95vw;
+        padding-left: 2.5vw;
+        margin: 0;
+        font-size: 25px;
+        height: auto;
+    }
+    .row-1, .row-2{
+        width: 100vw;
+        height: auto;
+    }
+    #row-1-img-vegetables, #row-2-img-sauteed
+        {
+        width: 95vw;
+        height: auto;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+    .row-2{
+        float: none;
+    }
+    .container{
+        text-align: center;
+    }
+  }

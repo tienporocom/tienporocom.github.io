@@ -311,3 +311,26 @@ label span {
 .modal-footer > :not(:last-child) {
   margin-right: 0.25rem;
 }
+@media (max-width: 768px) {
+  .slide1_slice1{
+    padding: 10px;
+    width: 100vw;
+  }
+  .slide1_des{
+    width: 95vw;
+  }
+  .rect{
+    width: auto;
+    top: 762px;
+    left: -385px;
+  }
+  .form_table{
+    margin: 0;
+  }
+  .form_table tr td:first-child{
+    width: 50px;
+  }
+  .form_table td input, .form_table td textarea{
+    width: 150px;
+  }
+}
